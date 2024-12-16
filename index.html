@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>M V Vishal Portfolio </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #00204a;
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+@media only screen and (max-width: 768px) {
+ 
+  .firstsection {
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftsection {
+    width: 100%;
+    margin-left: 0;
+  }
+  .rightsection {
+    margin-right: 0;
+  }
+  .rightsection img {
+    width: 200px;
+    height: 200px;
+  }
+  .secondsection {
+    margin-top: 20px;
+  }
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .text {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remove unnecessary margin */
+    width: auto; /* Allow it to scale automatically */
+}
+
+.logo img {
+    max-width: 100%; /* Ensure the image doesn't exceed the parent width */
+    max-height: 100%; /* Ensure the image doesn't exceed the parent height */
+    border-radius: 20px; /* Retain the rounded corners */
+    object-fit: contain; /* Ensure the image scales nicely within the box */
+}
+
+}
+        nav ul li {
+            list-style-type: none;
+            margin: 0px 23px;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: -10px;
+            height: 50px;
+            background-color: #1e549f;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 60px;
+            margin-bottom: 140px;
+            align-items: center;
+
+        }
+
+        nav ul a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul a:hover {
+            color: #090a0a;
+
+        }
+
+        .firstsection>div {
+            width: 40%;
+
+        }
+
+        .leftsection {
+            font-size: 2.4rem;
+            width: 8000px;
+            margin-left: 80px;
+
+
+        }
+
+        .rightsection {
+            margin-right: -50px;
+        }
+
+        .rightsection img {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            margin-top: 70px;
+
+            box-shadow: 0px 0px 20px black;
+        }
+
+        .purple {
+            color:red;
+            font-size: 45px;
+        }
+
+        #element {
+            color: #00FF00;
+        }
+        
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        hr {
+            border: 0px;
+            background-color: #0c345f;
+            height: 1px;
+            margin: 40px 80px;
+
+
+        }
+
+        .secondsection h1 {
+            font-size: 40px;
+        }
+
+        .text-grey {
+            color: grey;
+            margin-top: -100px;
+
+        }
+
+        .secondsection h1 {
+            margin-top: 1px;
+        }
+
+        .box {
+            border-radius: 50px;
+            background: #ededed;
+
+            width: 1000px;
+            height: auto;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            margin: 40px;
+            border: 1px solid black;
+            padding: 20px;
+            justify-content: space-between;
+
+
+            
+            
+
+
+        }
+
+        .text {
+            width: auto;
+            flex: 2;
+            height: auto;
+            margin: 20px 50px;
+            padding-right: 20px;
+            
+            color: #090a0a;
+
+
+        }
+
+        h2 {
+            font-size: 30px;
+            margin: 0px;
+
+
+        }
+
+        .box ul {
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 850px;
+        }
+
+        .logo {
+            height: auto;
+            width: 100%;
+            flex:1;
+            margin-left: 60px;
+            position: relative;
+            top: -5px;
+            text-align: right;
+
+
+        }
+
+        .logo img {
+            border-radius: 20px;
+            max-width: 300px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .boxmain {
+            display: flex;
+        }
+
+        .boxhalf {
+            border-radius: 50px;
+            background: #ededed;
+
+            width: 500px;
+            height: auto;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            margin: 40px;
+        }
+        footer{
+           
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: -10px;
+            height: 50px;
+            background-color: #1e549f;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi! My name is <span class="purple">M V VISHAL</span>
+                <div>and iam a passionate <br> <span id="element"></span></div>
+            </div>
+            <div class="rightsection"><img src="profile.jpg" alt=""></div>
+        </section>
+        <br>
+        <br>
+        <hr>
+
+        <section class="secondsection"><span class="text-grey">What i have done so far</span>
+            <h1>Work Experience</h1>
+        </section>
+        <div class="box">
+            <div class="text"> <br>
+                <h2>Quabyt technologies LLP</h2><span class=text-grey>Bangalore(jan 2024-may 2024)</span>
+                <ul>
+                    <li>Engineered a Task Management API using ASP.NET Core and EF Core, facilitating efficient CRUD
+                        operations and robust entity relationships.</li>
+                    <li>Designed intuitive endpoints to enhance usability and streamline API interactions</li>
+                    <li>Implemented robust exception handling and comprehensive unit tests, ensuring high reliability
+                    </li>
+                    <li>Documented the API with Swagger for ease of use by developers and end-users.</li>
+                    <li> Led the project independently, demonstrating strong self-motivation and technical proficiency.
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="logo">
+                <img src="images.png" alt="">
+            </div>
+        
+        </div>
+        <br>
+        <hr>
+        <section class="secondsection">
+            <h1>Academic Projects</h1>
+            <div class="boxmain">
+                <div class="boxhalf">
+                    <div class="text"> <br>
+                        <h2>AI-ML Assisted Judicial Decision Support System</h2>
+                        <ul>
+                            <li>Analyzed and summarized case files to streamline legal research.</li>
+                            
+                            <li>Extracted text from PDFs using PyPDF2.</li>
+                            <li>Applied Sentence Transformer models to enhance text analysis.</li>
+                            <li>Designed a recommendation system to suggest relevant legal cases.</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="boxhalf">
+                    <div class="text"> <br>
+                        <h2>Open Source Contribution Management System</h2>
+                        <ul>
+                            <li>Developed with Java and MySQL.</li>
+                            <li>Streamlined project management processes and enhanced efficiency.</li>
+                            <li> Reduced workload for leaders and optimized resource allocation.</li>
+                           
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="boxhalf">
+                <div class="text"> <br>
+                    <h2>Classroom - Innovative Education Management App</h2>
+                    <ul>
+                        <li>Modernized education with an innovative Android app.</li>
+                        <li>Facilitated communication among educators, students, and parents.</li>
+                        <li>Automated attendance and centralized records.</li>
+                        <li> Delivered real-time notifications, improving efficiency.</li>
+                        
+
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <br>
+        <hr>
+        <section class="secondsection">
+            <h1>About</h1>
+            <div class="box">
+                <div class="text"> <br>
+                    <h3>Hey there, I'm M V VISHAL !
+
+                        I'm a recent graduate with a degree in Computer Science & Engineering from Sahyadri College of Engineering & Management. Proficient in Java, C/C++, and Python, I'm passionate about crafting innovative solutions across various domains, including software development, web technologies, and more.
+                        
+                        Highlights of my journey include developing the "Open Source Contribution Management System," fostering collaboration in diverse communities. I've also led the creation of the "AI-ML Assisted Judicial Decision Support System," transforming learning experiences.
+                        
+                        During my internship at Quabyt Tech, I engineered a cutting-edge Task Management API using ASP.NET Core and Entity Framework Core, gaining invaluable skills in .NET development.
+                        
+                        Let's connect and innovate together in the dynamic world of technology!</h3>
+                </div>
+            </div>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Java Full Stack  Developer', 'Dotnet Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <footer>&copy; CopyRights 2024</footer>
+
+</body>
+
+</html>
