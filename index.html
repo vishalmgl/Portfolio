@@ -5,9 +5,9 @@
     <title>M V Vishal Portfolio </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <style>
         body {
             background-color: #00204a;
@@ -15,54 +15,60 @@
             font-family: "Poppins", sans-serif;
         }
 
-@media only screen and (max-width: 768px) {
- 
-  .firstsection {
-    flex-direction: column;
-    align-items: center;
-  }
-  .leftsection {
-    width: 100%;
-    margin-left: 0;
-  }
-  .rightsection {
-    margin-right: 0;
-  }
-  .rightsection img {
-    width: 200px;
-    height: 200px;
-  }
-  .secondsection {
-    margin-top: 20px;
-  }
-  .box {
-    flex-direction: column;
-    align-items: center;
-  }
-  .text {
-    width: 100%;
-    margin: 20px 0;
-  }
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0; /* Remove unnecessary margin */
-    width: auto; /* Allow it to scale automatically */
-}
+        @media only screen and (max-width: 768px) {
 
-.logo img {
-    max-width: 100%; /* Ensure the image doesn't exceed the parent width */
-    max-height: 100%; /* Ensure the image doesn't exceed the parent height */
-    border-radius: 20px; /* Retain the rounded corners */
-    object-fit: contain; /* Ensure the image scales nicely within the box */
-}
+            .firstsection {
+                flex-direction: column;
+                align-items: center;
+            }
 
-}
+            .leftsection {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .rightsection {
+                margin-right: 0;
+            }
+
+                .rightsection img {
+                    width: 200px;
+                    height: 200px;
+                }
+
+            .secondsection {
+                margin-top: 20px;
+            }
+
+            .box {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .text {
+                width: 100%;
+                margin: 20px 0;
+            }
+
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0; /* Remove unnecessary margin */
+                width: auto; /* Allow it to scale automatically */
+            }
+
+                .logo img {
+                    max-width: 100%; /* Ensure the image doesn't exceed the parent width */
+                    max-height: 100%; /* Ensure the image doesn't exceed the parent height */
+                    border-radius: 20px; /* Retain the rounded corners */
+                    object-fit: contain; /* Ensure the image scales nicely within the box */
+                }
+        }
+
         nav ul li {
             list-style-type: none;
             margin: 0px 23px;
-
         }
 
         nav {
@@ -72,14 +78,12 @@
             margin: -10px;
             height: 50px;
             background-color: #1e549f;
-
         }
 
-        nav ul {
-            display: flex;
-            justify-content: space-around;
-
-        }
+            nav ul {
+                display: flex;
+                justify-content: space-around;
+            }
 
         .left {
             font-size: 1.5rem;
@@ -91,7 +95,6 @@
             margin-top: 60px;
             margin-bottom: 140px;
             align-items: center;
-
         }
 
         nav ul a {
@@ -99,46 +102,41 @@
             text-decoration: none;
         }
 
-        nav ul a:hover {
-            color: #090a0a;
+            nav ul a:hover {
+                color: #090a0a;
+            }
 
-        }
-
-        .firstsection>div {
+        .firstsection > div {
             width: 40%;
-
         }
 
         .leftsection {
             font-size: 2.4rem;
             width: 8000px;
             margin-left: 80px;
-
-
         }
 
         .rightsection {
             margin-right: -50px;
         }
 
-        .rightsection img {
-            width: 400px;
-            height: 400px;
-            border-radius: 50%;
-            margin-top: 70px;
-
-            box-shadow: 0px 0px 20px black;
-        }
+            .rightsection img {
+                width: 400px;
+                height: 400px;
+                border-radius: 50%;
+                margin-top: 70px;
+                box-shadow: 0px 0px 20px black;
+            }
 
         .purple {
-            color:red;
+            color: red;
             font-size: 45px;
         }
 
         #element {
             color: #00FF00;
         }
-        
+
 
         .secondsection {
             max-width: 80vw;
@@ -150,8 +148,6 @@
             background-color: #0c345f;
             height: 1px;
             margin: 40px 80px;
-
-
         }
 
         .secondsection h1 {
@@ -161,7 +157,6 @@
         .text-grey {
             color: grey;
             margin-top: -100px;
-
         }
 
         .secondsection h1 {
@@ -222,7 +217,6 @@
         .boxhalf {
             border-radius: 50px;
             background: white;
-
             width: 500px;
             height: auto;
             margin: auto;
@@ -230,6 +224,7 @@
             align-items: center;
             margin: 40px;
         }
+
         footer {
             margin-top: 50px;
             display: flex;
@@ -239,6 +234,7 @@
             height: 50px;
             background-color: #1e549f;
         }
+
         .rightsection img {
             width: 400px;
             height: 400px;
@@ -257,6 +253,7 @@
                 box-shadow: 0px 0px 30px 15px rgba(0, 255, 255, 1);
             }
         }
+
         .projects-wrapper {
             display: flex;
             flex-wrap: wrap;
@@ -316,12 +313,14 @@
         .secondsection:last-of-type {
             margin-bottom: 50px; /* Adjust this value as needed */
         }
+
         .box:hover, .about-box:hover, .project-card:hover {
             background: #1e549f;
             color: white;
             transform: scale(1.05);
             box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
         }
+
             .box:hover h2,
             .box:hover span,
             .box:hover li,
@@ -334,6 +333,7 @@
             .about-box:hover span {
                 color: white !important;
             }
+
             .box:hover *,
             .about-box:hover *,
             .project-card:hover * {
@@ -410,10 +410,9 @@
             }
         }
 
-        main{
-            padding:5rem;
+        main {
+            padding: 5rem;
         }
-
     </style>
 </head>
 
@@ -442,161 +441,168 @@
             </div>
             <div class="rightsection"><img src="profile.jpg" alt=""></div>
         </section>
-        <br>
-        <br>
-        <hr>
+        <body text-align: center;">
+            <dotlottie-player src="https://lottie.host/bb92367c-775d-4e51-af6b-2cd21ed53628/ldIiyagZnG.lottie"
+                              background="transparent"
+                              speed="1"
+                              style="width: 100%; height: 100px; margin-top: 50px;"
+                              loop
+                              autoplay>
+            </dotlottie-player>
+            <hr>
 
-        <section class="secondsection">
-            <span class="text-grey">What i have done so far</span>
-            <h1>Work Experience</h1>
-        </section>
 
-        <br>
-        <div class="box">
-            <div class="text">
-                <br>
-                <h2>ByteFlow Innovations Private Limited</h2><span class=text-grey>Bangalore(Oct 2024-Current)</span>
-                <ul>
-                    <li>
-                        Built RESTful APIs with ASP.NET for seamless client-server communication.
-                    </li>
-                    <li>Integrated .NET backend with Razor Pages, HTML, CSS, and JavaScript for responsive UIs.</li>
-                    <li>
-                        Optimized performance using object-oriented principles and .NET collections.
-                    </li>
-                    <li>Executed CRUD operations with Entity Framework Core, ensuring data security.</li>
-                    <li>
-                        Implemented data validation using Fluent Validation to ensure consistent and reliable input handling.
-                    </li>
-                    <li>Documented APIs with Swagger for better developer collaboration.</li>
+            <section class="secondsection">
+                <span class="text-grey">What i have done so far</span>
+                <h1>Work Experience</h1>
+            </section>
 
-                </ul>
-
-            </div>
-            <div class="logo">
-                <img src="images.png" alt="">
-            </div>
-        </div>
-        <br>
-        <div class="box">
-            <div class="text">
-                <br>
-                <h2>Quabyt technologies LLP</h2><span class=text-grey>Bangalore(Jan 2024-May 2024)</span>
-                <ul>
-                    <li>
-                        Engineered a Task Management API using ASP.NET Core and EF Core, facilitating efficient CRUD
-                        operations and robust entity relationships.
-                    </li>
-                    <li>Designed intuitive endpoints to enhance usability and streamline API interactions</li>
-                    <li>
-                        Implemented robust exception handling and comprehensive unit tests, ensuring high reliability
-                    </li>
-                    <li>Documented the API with Swagger for ease of use by developers and end-users.</li>
-                    <li>
-                        Led the project independently, demonstrating strong self-motivation and technical proficiency.
-                    </li>
-
-                </ul>
-
-            </div>
-            <div class="logo">
-                <img src="images.png" alt="">
-            </div>
-
-        </div>
-        <br>
-        <hr>
-        <section class="secondsection">
-            <h1 class="section-header">Academic Projects</h1>
-
-            <div class="projects-wrapper">
-                <div class="project-card">
-                    <h2>AI-ML Assisted Judicial Decision Support System</h2>
-                    <p>Enhanced legal research through AI-powered case file summaries.</p>
-                    <ul>
-                        <li>Extracted text from PDFs using PyPDF2.</li>
-                        <li>Applied Sentence Transformer models for analysis.</li>
-                        <li>Designed a recommendation system for legal cases.</li>
-                    </ul>
-                </div>
-
-                <div class="project-card">
-                    <h2>Open Source Contribution Management System</h2>
-                    <p>Facilitated efficient collaboration in open-source development.</p>
-                    <ul>
-                        <li>Developed using Java & MySQL.</li>
-                        <li>Streamlined project management workflows.</li>
-                        <li>Optimized resource allocation for contributors.</li>
-                    </ul>
-                </div>
-
-                <div class="project-card">
-                    <h2>Classroom - Innovative Education Management App</h2>
-                    <p>Transformed traditional education methods with digital tools.</p>
-                    <ul>
-                        <li>Automated attendance & record-keeping.</li>
-                        <li>Created a communication bridge for students & educators.</li>
-                        <li>Developed interactive learning features.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <br>
-        <hr>
-        <section class="secondsection">
-            <h1>About</h1>
+            <br>
             <div class="box">
                 <div class="text">
                     <br>
-                    <h3>
-                        Hey there, I'm M V VISHAL !
+                    <h2>ByteFlow Innovations Private Limited</h2><span class=text-grey>Bangalore(Oct 2024-Current)</span>
+                    <ul>
+                        <li>
+                            Built RESTful APIs with ASP.NET for seamless client-server communication.
+                        </li>
+                        <li>Integrated .NET backend with Razor Pages, HTML, CSS, and JavaScript for responsive UIs.</li>
+                        <li>
+                            Optimized performance using object-oriented principles and .NET collections.
+                        </li>
+                        <li>Executed CRUD operations with Entity Framework Core, ensuring data security.</li>
+                        <li>
+                            Implemented data validation using Fluent Validation to ensure consistent and reliable input handling.
+                        </li>
+                        <li>Documented APIs with Swagger for better developer collaboration.</li>
 
-                        I'm a recent graduate with a degree in Computer Science & Engineering from Sahyadri College of Engineering & Management. Proficient in Java, C/C++, and Python, I'm passionate about crafting innovative solutions across various domains, including software development, web technologies, and more.
+                    </ul>
 
-                        Highlights of my journey include developing the "Open Source Contribution Management System," fostering collaboration in diverse communities. I've also led the creation of the "AI-ML Assisted Judicial Decision Support System," transforming learning experiences.
-
-                        During my internship at Quabyt Tech, I engineered a cutting-edge Task Management API using ASP.NET Core and Entity Framework Core, gaining invaluable skills in .NET development.
-
-                        Let's connect and innovate together in the dynamic world of technology!
-                    </h3>
+                </div>
+                <div class="logo">
+                    <img src="images.png" alt="">
                 </div>
             </div>
-            <!-- From Uiverse.io by barisdogansutcu -->
-            <button class="download-button" onclick="downloadResume()">
-                <div class="docs">
-                    <svg viewBox="0 0 24 24"
-                         width="20"
-                         height="20"
-                         stroke="currentColor"
-                         stroke-width="2"
-                         fill="none"
-                         stroke-linecap="round"
-                         stroke-linejoin="round"
-                         class="css-i6dzq1">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                        <polyline points="14 2 14 8 20 8"></polyline>
-                        <line x1="16" y1="13" x2="8" y2="13"></line>
-                        <line x1="16" y1="17" x2="8" y2="17"></line>
-                        <polyline points="10 9 9 9 8 9"></polyline>
-                    </svg>
-                    Resume
+            <br>
+            <div class="box">
+                <div class="text">
+                    <br>
+                    <h2>Quabyt technologies LLP</h2><span class=text-grey>Bangalore(Jan 2024-May 2024)</span>
+                    <ul>
+                        <li>
+                            Engineered a Task Management API using ASP.NET Core and EF Core, facilitating efficient CRUD
+                            operations and robust entity relationships.
+                        </li>
+                        <li>Designed intuitive endpoints to enhance usability and streamline API interactions</li>
+                        <li>
+                            Implemented robust exception handling and comprehensive unit tests, ensuring high reliability
+                        </li>
+                        <li>Documented the API with Swagger for ease of use by developers and end-users.</li>
+                        <li>
+                            Led the project independently, demonstrating strong self-motivation and technical proficiency.
+                        </li>
+
+                    </ul>
+
                 </div>
-                <div class="download">
-                    <svg viewBox="0 0 24 24"
-                         width="24"
-                         height="24"
-                         stroke="currentColor"
-                         stroke-width="2"
-                         fill="none"
-                         stroke-linecap="round"
-                         stroke-linejoin="round"
-                         class="css-i6dzq1">
-                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                        <polyline points="7 10 12 15 17 10"></polyline>
-                        <line x1="12" y1="15" x2="12" y2="3"></line>
-                    </svg>
+                <div class="logo">
+                    <img src="images.png" alt="">
                 </div>
-            </button>
+
+            </div>
+            <br>
+            <hr>
+            <section class="secondsection">
+                <h1 class="section-header">Academic Projects</h1>
+
+                <div class="projects-wrapper">
+                    <div class="project-card">
+                        <h2>AI-ML Assisted Judicial Decision Support System</h2>
+                        <p>Enhanced legal research through AI-powered case file summaries.</p>
+                        <ul>
+                            <li>Extracted text from PDFs using PyPDF2.</li>
+                            <li>Applied Sentence Transformer models for analysis.</li>
+                            <li>Designed a recommendation system for legal cases.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <h2>Open Source Contribution Management System</h2>
+                        <p>Facilitated efficient collaboration in open-source development.</p>
+                        <ul>
+                            <li>Developed using Java & MySQL.</li>
+                            <li>Streamlined project management workflows.</li>
+                            <li>Optimized resource allocation for contributors.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <h2>Classroom - Innovative Education Management App</h2>
+                        <p>Transformed traditional education methods with digital tools.</p>
+                        <ul>
+                            <li>Automated attendance & record-keeping.</li>
+                            <li>Created a communication bridge for students & educators.</li>
+                            <li>Developed interactive learning features.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <hr>
+            <section class="secondsection">
+                <h1>About</h1>
+                <div class="box">
+                    <div class="text">
+                        <br>
+                        <h3>
+                            Hey there, I'm M V VISHAL !
+
+                            I'm a recent graduate with a degree in Computer Science & Engineering from Sahyadri College of Engineering & Management. Proficient in Java, C/C++, and Python, I'm passionate about crafting innovative solutions across various domains, including software development, web technologies, and more.
+
+                            Highlights of my journey include developing the "Open Source Contribution Management System," fostering collaboration in diverse communities. I've also led the creation of the "AI-ML Assisted Judicial Decision Support System," transforming learning experiences.
+
+                            During my internship at Quabyt Tech, I engineered a cutting-edge Task Management API using ASP.NET Core and Entity Framework Core, gaining invaluable skills in .NET development.
+
+                            Let's connect and innovate together in the dynamic world of technology!
+                        </h3>
+                    </div>
+                </div>
+                <!-- From Uiverse.io by barisdogansutcu -->
+                <button class="download-button" onclick="downloadResume()">
+                    <div class="docs">
+                        <svg viewBox="0 0 24 24"
+                             width="20"
+                             height="20"
+                             stroke="currentColor"
+                             stroke-width="2"
+                             fill="none"
+                             stroke-linecap="round"
+                             stroke-linejoin="round"
+                             class="css-i6dzq1">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        Resume
+                    </div>
+                    <div class="download">
+                        <svg viewBox="0 0 24 24"
+                             width="24"
+                             height="24"
+                             stroke="currentColor"
+                             stroke-width="2"
+                             fill="none"
+                             stroke-linecap="round"
+                             stroke-linejoin="round"
+                             class="css-i6dzq1">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </div>
+                </button>
     </main>
     <script>
         function downloadResume() {
