@@ -7,22 +7,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             background-color: #00204a;
             color: white;
             font-family: "Poppins", sans-serif;
         }
 
-        
 
-        nav ul li {
+
+        .nav ul li {
             list-style-type: none;
             margin: 0px 23px;
         }
 
-        nav {
+        .nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -31,7 +37,7 @@
             background-color: #1e549f;
         }
 
-            nav ul {
+            .nav ul {
                 display: flex;
                 justify-content: space-around;
             }
@@ -43,18 +49,17 @@
         .firstsection {
             display: flex;
             justify-content: space-around;
-            margin-top: 60px;
             margin-bottom: 140px;
             align-items: center;
             flex-wrap: wrap;
         }
 
-        nav ul a {
+        .nav ul a {
             color: white;
             text-decoration: none;
         }
 
-            nav ul a:hover {
+            .nav ul a:hover {
                 color: #090a0a;
             }
 
@@ -70,7 +75,9 @@
         }
 
         .rightsection {
-            margin-right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
             .rightsection img {
@@ -128,11 +135,14 @@
             border: 1px solid black;
             box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
             transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            /*            flex-wrap: wrap;*/
         }
 
         .text {
-            flex: 3; /* Give more space to text */
+            /* Give more space to text */
             color: #090a0a;
+            overflow: auto;
+            width: 100%;
         }
 
         .logo {
@@ -160,7 +170,7 @@
             color: black;
             padding-left: 20px;
             padding-right: 20px;
-            width: 850px;
+            width: 100%;
         }
 
         .boxmain {
@@ -187,9 +197,11 @@
             height: 50px;
             background-color: #1e549f;
         }
+
         .body {
             overflow-x: hidden;
         }
+
         .rightsection img {
             width: 400px;
             height: 400px;
@@ -198,9 +210,11 @@
             box-shadow: 0px 0px 20px 10px rgba(0, 255, 255, 0.8); /* Neon cyan glow */
             animation: glow 1.5s infinite alternate;
         }
+
         * {
             box-sizing: border-box;
         }
+
         @keyframes glow {
             0% {
                 box-shadow: 0px 0px 20px 10px rgba(0, 255, 255, 0.8);
@@ -274,9 +288,11 @@
         .box:hover, .about-box:hover, .project-card:hover {
             background: #1e549f;
             color: white;
-            transform: scale(1.05);
+            transform: scale(1.02); /* Slight scale */
             box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+            border: 2px solid #fff; /* Add a border */
         }
+
 
             .box:hover h2,
             .box:hover span,
@@ -323,13 +339,15 @@
                 border: solid 1px #e8e8e82d;
                 transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
             }
+
         body, main {
             width: 100%;
             overflow-x: hidden;
         }
-            .download-button:hover {
-                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-            }
+
+        .download-button:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
 
         .download {
             position: absolute;
@@ -374,108 +392,124 @@
             padding: 5rem;
             width: 100%;
         }
-        @media (max-width: 767px) {
 
-            nav {
-                flex-direction: column;
-                height: auto;
-                padding: 10px;
-                text-align: center;
+        @media (max-width: 1200px) {
+            .firstsection > div {
+                width: 45%;
             }
 
-                nav ul {
-                    flex-direction: column;
-                    gap: 10px;
+            .nav {
+                height: 60px;
+            }
+
+                .nav ul li {
+                    margin: 0px 15px;
                 }
 
-            .left {
-                font-size: 1.2rem;
-                margin-bottom: 10px;
+            .leftsection {
+                font-size: 2rem;
+                margin-left: 30px;
             }
 
-            /* Hero Section */
+            .rightsection img {
+                width: 300px;
+                height: 300px;
+            }
+
+            .box {
+                padding: 30px;
+            }
+
+            .logo img {
+                max-width: 200px;
+            }
+        }
+
+        @media (max-width: 768px) {
             .firstsection {
                 flex-direction: column;
-                text-align: center;
-                margin-top: 30px;
                 margin-bottom: 80px;
             }
+
+                .firstsection > div {
+                    width: 80%;
+                    margin-bottom: 30px;
+                }
 
             .leftsection {
                 font-size: 1.8rem;
                 margin-left: 0;
-                width: 100%;
-            }
-
-            .rightsection {
-                margin-right: 0;
-            }
-
-                .rightsection img {
-                    width: 250px;
-                    height: 250px;
-                    margin-top: 40px;
-                }
-
-            /* Section Adjustments */
-            .secondsection {
-                max-width: 95vw;
                 text-align: center;
             }
 
-            /* Project Cards */
-            .projects-wrapper {
-                flex-direction: column;
-                align-items: center;
+            .rightsection img {
+                width: 250px;
+                height: 250px;
             }
 
-            .project-card {
-                width: 90%;
-            }
-
-            /* About Section */
-            .about-box {
-                padding: 20px;
-            }
-
-            /* Box Layout */
             .box {
                 flex-direction: column;
-                text-align: center;
                 padding: 20px;
             }
 
-                .box ul {
-                    width: 100%;
-                }
-
-            .boxhalf {
-                width: 90%;
+            .projects-wrapper {
                 flex-direction: column;
-                padding: 20px;
-            }
-
-            /* Footer */
-            footer {
-                flex-direction: column;
-                text-align: center;
-                height: auto;
+                gap: 20px;
                 padding: 10px;
             }
 
-            /* Adjust Button */
-            .download-button {
+            .project-card {
                 width: 100%;
-                text-align: center;
+            }
+
+            footer {
+                flex-direction: column;
+                height: auto;
             }
         }
 
+        @media (max-width: 480px) {
+            /**/.nav {
+                flex-direction: column;
+                height: auto;
+            }
+
+                .nav ul {
+                    flex-direction: column;
+                    justify-content:space-evenly;
+                }
+
+                    .nav ul li {
+
+                    }
+
+            .firstsection {
+                margin-bottom: 50px;
+            }
+
+            .box {
+                padding: 15px;
+            }
+
+            .logo img {
+                max-width: 150px;
+            }
+
+            .rightsection img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .leftsection {
+                font-size: 1.5rem;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <nav>
+        <div class="nav">
             <div class="left">Portfolio</div>
             <div class="right">
                 <ul>
@@ -488,7 +522,7 @@
                 </ul>
 
             </div>
-        </nav>
+        </div>
     </header>
     <main>
         <section class="firstsection">
@@ -498,6 +532,7 @@
             </div>
             <div class="rightsection"><img src="profile.jpg" alt=""></div>
         </section>
+        <a href="#secondsection">
             <dotlottie-player src="https://lottie.host/bb92367c-775d-4e51-af6b-2cd21ed53628/ldIiyagZnG.lottie"
                               background="transparent"
                               speed="1"
@@ -505,10 +540,11 @@
                               loop
                               autoplay>
             </dotlottie-player>
+        </a>
             <hr>
 
 
-            <section class="secondsection">
+            <section class="secondsection" id="secondsection">
                 <span class="text-grey">What i have done so far</span>
                 <h1>Work Experience</h1>
                 <div class="box">
@@ -660,6 +696,7 @@
                         </svg>
                     </div>
                 </button>
+            </section>
     </main>
     <script>
         function downloadResume() {
